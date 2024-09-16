@@ -18,6 +18,11 @@ export default function Home(){
             title="Ir para detalhes"
             onPress={ navegaDetalhes }
             />
+
+            <Button
+            title="Abrir Drawer"
+            onPress={ () => navigation.openDrawer() }
+            />
         </View>
     );
 }
