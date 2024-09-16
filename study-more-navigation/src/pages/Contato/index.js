@@ -1,14 +1,12 @@
 import React, {useLayoutEffect} from "react";
 import {View, Text, StyleSheet, Button} from 'react-native';
 
-import {useNavigation} from '@react-navigation/native'
+import { useNavigation, StackActions } from '@react-navigation/native'
 
-export default function Sobre(){
-    const navigation = useNavigation();
-
+export default function Contato(){
     return(
         <View style={styles.container}>
-            <Text>Tela Sobre</Text>
+            <Text>Pagina Contato</Text>
         </View>
     );
 }
