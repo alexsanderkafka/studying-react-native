@@ -7,16 +7,16 @@ export default function Home(){
 
     const navigation = useNavigation();
 
-    function navegaSobre(){
-        navigation.navigate('Sobre');
+    function navegaDetalhes(){
+        navigation.navigate('Detalhes');
     }
 
     return(
         <View style={styles.container}>
             <Text>Tela Home</Text>
             <Button
-            title="Ir para sobre"
-            onPress={navegaSobre}
+            title="Ir para detalhes"
+            onPress={ navegaDetalhes }
             />
         </View>
     );
