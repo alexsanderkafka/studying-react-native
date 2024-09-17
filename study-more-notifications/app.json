@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "study-more-notifications",
+    "slug": "study-more-notifications",
+    "version": "1.0.0",
+    "plugins": [
+      [
+	      "expo-build-properties",
+	      {
+	          "android": {
+		          "extraMavenRepos": [
+			            "../../node_modules/@notifee/react-native/android/libs"
+				      ]
+	          }
+	      }
+      ]
+    ],
+    "build": {
+      "dev": {
+        "developmentClient": true,
+        "distribution": "internal",
+        "android": {
+          "image": "ubuntu-18.04-jdk-11-ndk-r19c"
+        }
+      }
+    },
+    "android": {
+      "package": "com.kafkasystem.br"
+    }
+  }
+}
